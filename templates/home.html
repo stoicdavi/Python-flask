@@ -18,10 +18,13 @@
     <p> - The Team </p>
     <button onclick="sayHello()">Click me!</button>
     collect data from a student
-    <form action="http://localhost:5002\login" method="get">
-        <p>Enter Name:</p>
-        <p><input type="text" name="nm"></p>
+    <form action="http://localhost:5001/results" method="post">
+        <p>Enter Name:<input type="text" name="name"></p>
+        <p>Enter Roll Number:<input type="text" name="roll"></p>
+        <p>Physics<input type="text" name="physics"></p>
+        <p>Chemistry<input type="text" name="chemistry"></p>
+
         <p><input type="submit" value="submit"></p>
-        
+    </form>
 </body>
 </html>
