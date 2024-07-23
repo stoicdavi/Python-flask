@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src = "{{ url_for('static', filename='script.js') }}">
+    </script>
+</head>
+<body>
+    //simple about page
+    <h1> About Us </h1>
+    <p> We are a group of developers who are passionate about coding and building cool stuff. </p>
+    <p> We are always looking for new projects to work on and new people to work with. </p>
+    <p> If you have an idea for a project or just want to chat, feel free to reach out to us. </p>
+    <p> We are always happy to help and are excited to hear from you. </p>
+    <p> We look forward to working with you! </p>
+    <p> - The Team </p>
+    <button onclick="sayHello()">Click me!</button>
+    collect data from a student
+    <form action="http://localhost:5002\login" method="get">
+        <p>Enter Name:</p>
+        <p><input type="text" name="nm"></p>
+        <p><input type="submit" value="submit"></p>
+        
+</body>
+</html>
