@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <h3>Students - Flask SQLAlchemy Example</h3>
+    <hr>
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+    <div class="alert alert-danger">
+        {{ message }}
+    </div>
+    {% endfor %}
+    <form action="{{ url_for('new') }}" method="post">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Name"><br>
+        
+        <label for="city">City</label><br>
+        <input type="text" id="city" name="city" placeholder="City"><br>
+        
+        <label for="addr">Address</label><br>
+        <textarea id="addr" name="addr" placeholder="Address"></textarea><br>
+        
+        <label for="pin">PINCODE</label>
+        <input type="text" id="pin" name="pin" placeholder="PIN"><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
